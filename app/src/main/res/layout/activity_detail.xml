@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bg_maroon"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/rounded_maroon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/bg_white"
+            android:layout_width="380dp"
+            android:layout_height="48dp"
+            android:src="@drawable/rounded_white"
+            app:layout_constraintStart_toStartOf="@id/bg_maroon"
+            app:layout_constraintEnd_toEndOf="@id/bg_maroon"
+            app:layout_constraintTop_toTopOf="@id/bg_maroon"
+            app:layout_constraintBottom_toBottomOf="@id/bg_maroon" />
+
+        <TextView
+            android:id="@+id/tv_khs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kartu_hasil_studi"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/bg_white"
+            app:layout_constraintEnd_toEndOf="@id/bg_white"
+            app:layout_constraintTop_toTopOf="@id/bg_white"
+            app:layout_constraintBottom_toBottomOf="@id/bg_white" />
+
+        <TextView
+            android:id="@+id/tv_nama1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bg_maroon" />
+
+        <TextView
+            android:id="@+id/tv_titik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titik"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            app:layout_constraintStart_toEndOf="@id/tv_nama1"
+            app:layout_constraintTop_toBottomOf="@id/bg_maroon" />
+
+        <TextView
+            android:id="@+id/tv_nim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nim1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_nama1" />
+
+        <TextView
+            android:id="@+id/tv_titik2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titik"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="66dp"
+            app:layout_constraintStart_toEndOf="@id/tv_nim1"
+            app:layout_constraintTop_toBottomOf="@id/tv_titik" />
+
+        <TextView
+            android:id="@+id/tv_jurusan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jurusan1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_nim1" />
+
+        <TextView
+            android:id="@+id/tv_titik3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titik"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            app:layout_constraintStart_toEndOf="@id/tv_jurusan1"
+            app:layout_constraintTop_toBottomOf="@id/tv_titik2" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/tv_titik"
+            app:layout_constraintTop_toBottomOf="@id/bg_maroon" />
+
+        <TextView
+            android:id="@+id/tv_nim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nim"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/tv_titik2"
+            app:layout_constraintTop_toBottomOf="@id/tv_nama" />
+
+        <TextView
+            android:id="@+id/tv_jurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jurusan"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/tv_titik3"
+            app:layout_constraintTop_toBottomOf="@id/tv_nim" />
+
+        <TableLayout
+            android:id="@+id/tbl_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_jurusan">
+            <TableRow
+                android:id="@+id/tbl_row_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red">
+                <TextView
+                    android:id="@+id/td_no"
+                    android:text="@string/no"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/td_kode"
+                    android:text="@string/kode"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_weight="3" />
+                <TextView
+                    android:id="@+id/td_matkul"
+                    android:text="@string/nama_matkul"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_weight="10" />
+                <TextView
+                    android:id="@+id/td_sks"
+                    android:text="@string/sks"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/td_angka"
+                    android:text="@string/n_angka"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/td_huruf"
+                    android:text="@string/n_huruf"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_weight="1" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:id="@+id/bg_maroon1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/maroon"
+            android:layout_marginTop="405dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tbl_data"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <View
+            android:id="@+id/bg_white1"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/bg_maroon1" />
+
+        <Button
+            android:id="@+id/btn_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:text="@string/input_data"
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/bg_white1" />
+
+        <TextView
+            android:id="@+id/tv_ipk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ipk"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bg_white1" />
+
+        <TextView
+            android:id="@+id/tv_sama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sama"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="112dp"
+            app:layout_constraintStart_toEndOf="@id/tv_ipk1"
+            app:layout_constraintTop_toTopOf="@id/bg_white1" />
+
+        <TextView
+            android:id="@+id/tv_ipk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_90"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/tv_sama"
+            app:layout_constraintTop_toTopOf="@id/bg_white1" />
+
+        <TextView
+            android:id="@+id/tv_total_sks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_sks"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_ipk1" />
+
+        <TextView
+            android:id="@+id/tv_sama1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sama"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="61dp"
+            app:layout_constraintStart_toEndOf="@id/tv_total_sks"
+            app:layout_constraintTop_toBottomOf="@id/tv_sama" />
+
+        <TextView
+            android:id="@+id/tv_jml_sks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_24"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/tv_sama1"
+            app:layout_constraintTop_toBottomOf="@id/tv_ipk" />
+
+        <TextView
+            android:id="@+id/tv_total_matkul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jumlah_matakuliah"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_total_sks" />
+
+        <TextView
+            android:id="@+id/tv_sama2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sama"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="11dp"
+            app:layout_constraintStart_toEndOf="@id/tv_total_matkul"
+            app:layout_constraintTop_toBottomOf="@id/tv_sama1" />
+
+        <TextView
+            android:id="@+id/tv_jml_makul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_24"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/tv_sama2"
+            app:layout_constraintTop_toBottomOf="@id/tv_jml_sks" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

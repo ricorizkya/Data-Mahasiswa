@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "552321612291",
+    "project_id": "project-pbo-d1936",
+    "storage_bucket": "project-pbo-d1936.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552321612291:android:39cec12e45ded8a383ac36",
+        "android_client_info": {
+          "package_name": "com.example.datamahasiswa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552321612291-q73lb7es6rg8oob1lc9i8nkd449jvet4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF-k5CTcxpnAj6Xhnt_ku0IRAqM_cbQNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552321612291-q73lb7es6rg8oob1lc9i8nkd449jvet4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

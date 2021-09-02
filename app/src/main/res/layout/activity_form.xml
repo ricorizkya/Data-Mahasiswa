@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/bg_blue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/entry_data_khs"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bg_blue"
+            app:layout_constraintBottom_toBottomOf="@id/bg_blue" />
+
+        <ImageView
+            android:id="@+id/bg_green"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/rounded_green"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bg_blue" />
+
+        <ImageView
+            android:id="@+id/bg_white"
+            android:layout_width="390dp"
+            android:layout_height="330dp"
+            android:src="@drawable/rounded_white"
+            app:layout_constraintStart_toStartOf="@id/bg_green"
+            app:layout_constraintEnd_toEndOf="@id/bg_green"
+            app:layout_constraintTop_toTopOf="@id/bg_green"
+            app:layout_constraintBottom_toBottomOf="@id/bg_green" />
+
+        <View
+            android:id="@+id/bg_grey1"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@id/bg_white"
+            app:layout_constraintTop_toTopOf="@id/bg_white" />
+
+        <TextView
+            android:id="@+id/tv_kode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kode"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@id/bg_grey1"
+            app:layout_constraintTop_toTopOf="@id/bg_grey1"
+            app:layout_constraintBottom_toBottomOf="@id/bg_grey1" />
+
+        <View
+            android:id="@+id/bg_grey2"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/bg_white"
+            app:layout_constraintTop_toBottomOf="@id/bg_grey1" />
+
+        <TextView
+            android:id="@+id/tv_matkul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/matakuliah"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@id/bg_grey2"
+            app:layout_constraintTop_toTopOf="@id/bg_grey2"
+            app:layout_constraintBottom_toBottomOf="@id/bg_grey2" />
+
+        <View
+            android:id="@+id/bg_grey3"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/bg_white"
+            app:layout_constraintTop_toBottomOf="@id/bg_grey2" />
+
+        <TextView
+            android:id="@+id/tv_sks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sks"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@id/bg_grey3"
+            app:layout_constraintTop_toTopOf="@id/bg_grey3"
+            app:layout_constraintBottom_toBottomOf="@id/bg_grey3" />
+
+        <View
+            android:id="@+id/bg_grey4"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/bg_white"
+            app:layout_constraintTop_toBottomOf="@id/bg_grey3" />
+
+        <TextView
+            android:id="@+id/tv_angka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/n_angka"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@id/bg_grey4"
+            app:layout_constraintTop_toTopOf="@id/bg_grey4"
+            app:layout_constraintBottom_toBottomOf="@id/bg_grey4" />
+
+        <View
+            android:id="@+id/bg_grey5"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/bg_white"
+            app:layout_constraintTop_toBottomOf="@id/bg_grey4" />
+
+        <TextView
+            android:id="@+id/tv_huruf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/n_huruf"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@id/bg_grey5"
+            app:layout_constraintTop_toTopOf="@id/bg_grey5"
+            app:layout_constraintBottom_toBottomOf="@id/bg_grey5"/>
+
+        <View
+            android:id="@+id/bg_grey6"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/bg_white"
+            app:layout_constraintTop_toBottomOf="@id/bg_grey5" />
+
+        <TextView
+            android:id="@+id/tv_predikat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/predikat"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@id/bg_grey6"
+            app:layout_constraintTop_toTopOf="@id/bg_grey6"
+            app:layout_constraintBottom_toBottomOf="@id/bg_grey6"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp_kode"
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/bg_grey1"
+            app:layout_constraintTop_toTopOf="@id/bg_white" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp_matkul"
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/bg_grey2"
+            app:layout_constraintTop_toBottomOf="@id/inp_kode" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp_sks"
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/bg_grey3"
+            app:layout_constraintTop_toBottomOf="@id/inp_matkul" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inp_angka"
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/bg_grey4"
+            app:layout_constraintTop_toBottomOf="@id/inp_sks" />
+
+        <View
+            android:id="@+id/bg_grey8"
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/bg_grey5"
+            app:layout_constraintTop_toBottomOf="@id/inp_angka" />
+
+        <TextView
+            android:id="@+id/tv_huruf1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@id/bg_grey8"
+            app:layout_constraintTop_toTopOf="@id/bg_grey8"
+            app:layout_constraintBottom_toBottomOf="@id/bg_grey8" />
+
+        <View
+            android:id="@+id/bg_grey9"
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/bg_grey6"
+            app:layout_constraintTop_toBottomOf="@id/bg_grey8" />
+
+        <TextView
+            android:id="@+id/tv_predikat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/baik"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@id/bg_grey9"
+            app:layout_constraintTop_toTopOf="@id/bg_grey9"
+            app:layout_constraintBottom_toBottomOf="@id/bg_grey9" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="15dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="115dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bg_green" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="15dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/btn_save_data"
+            app:layout_constraintTop_toBottomOf="@id/bg_green" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

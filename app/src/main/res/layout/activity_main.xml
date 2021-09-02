@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/masuk"
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <View
+            android:id="@+id/bg_nama"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bg_nama" />
+
+        <TextView
+            android:id="@+id/tv_nim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nim"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_nama" />
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/bg_maroon"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/rounded_maroon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_logo" />
+
+        <ImageView
+            android:id="@+id/bg_white"
+            android:layout_width="380dp"
+            android:layout_height="78dp"
+            android:src="@drawable/rounded_white"
+            app:layout_constraintStart_toStartOf="@id/bg_maroon"
+            app:layout_constraintEnd_toEndOf="@id/bg_maroon"
+            app:layout_constraintTop_toTopOf="@id/bg_maroon"
+            app:layout_constraintBottom_toBottomOf="@id/bg_maroon" />
+
+        <TextView
+            android:id="@+id/tv_fakultas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fakultas"
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="@id/bg_white"
+            app:layout_constraintEnd_toEndOf="@id/bg_white"
+            app:layout_constraintTop_toTopOf="@id/bg_white" />
+
+        <TextView
+            android:id="@+id/tv_jurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jurusan"
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/bg_white"
+            app:layout_constraintEnd_toEndOf="@id/bg_white"
+            app:layout_constraintTop_toBottomOf="@id/tv_fakultas" />
+
+        <TextView
+            android:id="@+id/tv_ti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ti"
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/bg_white"
+            app:layout_constraintEnd_toEndOf="@id/bg_white"
+            app:layout_constraintTop_toBottomOf="@id/tv_jurusan" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/yusaf"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="70dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bg_maroon"
+            app:layout_constraintBottom_toTopOf="@id/bg_nama" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

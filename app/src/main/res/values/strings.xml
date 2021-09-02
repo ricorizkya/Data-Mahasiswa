@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">DataMahasiswa</string>
+    <string name="masuk">Masuk</string>
+    <string name="nama">Yunisaf Akmal</string>
+    <string name="nim">A11.2017.10280</string>
+    <string name="fakultas">FAKULTAS ILMU KOMPUTER</string>
+    <string name="jurusan">TEKNIK INFORMATIKA</string>
+    <string name="ti">Jurusan : Teknik Informatika</string>
+    <string name="kartu_hasil_studi">KARTU HASIL STUDI</string>
+    <string name="nama1">NAMA</string>
+    <string name="titik">:</string>
+    <string name="nim1">NIM</string>
+    <string name="jurusan1">JURUSAN</string>
+    <string name="no">No</string>
+    <string name="kode">Kode</string>
+    <string name="nama_matkul">Nama Matkul</string>
+    <string name="sks">SKS</string>
+    <string name="n_angka">N.Angka</string>
+    <string name="n_huruf">N.Huruf</string>
+    <string name="input_data">INPUT DATA</string>
+    <string name="ipk">IPK</string>
+    <string name="sama">=</string>
+    <string name="_3_90">3.90</string>
+    <string name="total_sks">TOTAL SKS</string>
+    <string name="_24">24</string>
+    <string name="jumlah_matakuliah">Jumlah Matakuliah</string>
+    <string name="entry_data_khs">Entry Data KHS</string>
+    <string name="matakuliah">Matakuliah</string>
+    <string name="predikat">Predikat</string>
+    <string name="a">A</string>
+    <string name="baik">Baik</string>
+    <string name="save">SAVE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="sangat_baik">Sangat Baik</string>
+    <string name="cukup">Cukup</string>
+    <string name="jelek">Jelek</string>
+    <string name="sangat_jelek">Sangat Jelek</string>
+</resources>
