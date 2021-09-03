@@ -17,14 +17,12 @@ class InputActivity : AppCompatActivity() {
         binding = ActivityInputBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val angka = binding.inpAngka.text.toString().trim()
-
         binding.tvHuruf1.visibility = View.INVISIBLE
         binding.tvPredikat1.visibility = View.INVISIBLE
 
         data()
 
-        binding.btnSaveData.setOnClickListener {
+        binding.btnSave.setOnClickListener {
             saveData()
         }
 
